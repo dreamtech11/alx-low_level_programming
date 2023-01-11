@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 #include <stdio.h>
 
@@ -80,6 +80,8 @@ int main(void)
 
 
 
+    buffer = create_array(98, 'H');
+
     if  (buffer == NULL)
 
     {
@@ -90,6 +92,7 @@ int main(void)
 
     }
 
+    simple_print_buffer(buffer, 98);
 
     free(buffer);
 
